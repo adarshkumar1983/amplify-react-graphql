@@ -1,0 +1,69 @@
+/* Add this CSS to your stylesheet (e.g., App.css) or in a <style> tag within your component. */
+
+table {
+    width: 100%;
+    border-collapse:  separate;
+
+  }
+  
+  th, td {
+    border: 1px solid #000000;
+    padding: 7px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #34ca27;
+  }
+  
+  /* tr:nth-child(even) {
+    background-color: 
+  } */
+  
+  tr:hover {
+    background-color: #4db3aa;
+  }
+  
+  button {
+    padding: 5px 10px;
+    background-color: #2185ef;
+    backface-visibility: visible;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #b30000;
+  }
+  
+  .tooltip {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    padding-top: 4%;
+    border-collapse:  separate;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+  
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 0px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    top: -30px;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }

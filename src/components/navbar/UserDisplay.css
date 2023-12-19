@@ -1,0 +1,48 @@
+/* Add this to your styles.css or a separate stylesheet */
+.user-display {
+    text-align: center;
+margin-top: auto;
+    position: relative;
+  }
+  
+
+  .user-info {
+    margin-top: 5px;
+  }
+  
+  .username {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 5px;
+    /* padding: 8px 16px;
+    border-radius: 4px; */
+  }
+  
+  /* Light mode styles */
+  .app-bar.light .username {
+    background-color: #fff;
+    color: #000;
+  }
+  
+  /* Dark mode styles */
+  .app-bar.dark .username {
+    background-color: #000000;
+    color: #fff;
+  }
+  
+
+  
+  .sign-out-button {
+   
+    /* padding: 8px 16px; */
+    background-color: #1877f2; /* Facebook blue color */
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .sign-out-button:hover {
+    background-color: #115293; /* Darker blue on hover */
+  }
+  

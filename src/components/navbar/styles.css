@@ -1,0 +1,218 @@
+/* 
+.app-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 10px 20px;
+  color: rgb(234, 232, 232);
+  
+
+  top: 0; 
+  left: 0;
+  right: 0;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.app-bar__logo {
+  font-size: 24px;
+}
+
+.app-bar__search {
+  display: flex;
+}
+
+.app-bar__search input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.app-bar__search button {
+  background-color: #1976D2;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+.navbar-logo img {
+  width:10px;
+  height: 10px; 
+}
+
+.round-image {
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+}
+
+body {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3498db;
+  padding: 10px;
+  color: white;
+}
+
+.theme-toggle {
+  order: 1;
+  background: transparent; 
+  border: 2px solid #007BFF; 
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+  background: #007BFF;
+  color: #fff;
+}
+
+
+body.dark {
+  background-color:rgb(40, 42, 45);
+  color: #fff;
+}
+
+.navbar.dark {
+  background-color: #d20e0e;
+}
+
+
+
+
+.add-button {
+  margin-left: 1200px;
+
+}
+
+
+
+
+ */
+
+
+ /* Add this to your styles.css or a separate stylesheet */
+
+.app-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #000000;
+  color: #fff;
+  z-index: 1000; /* Adjust the z-index as needed */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.app-bar__right {
+  display: flex;
+  align-items: center;
+}
+.app-bar__logo {
+  display: flex;
+  align-items: center;
+}
+
+.round-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.profile-wrapper {
+  position: relative;
+}
+
+.profile-trigger {
+  cursor: pointer;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 100%; /* Place the dropdown below the trigger */
+  right: 0;
+  width: 200px;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  opacity: 0;
+  transform-origin: top right;
+  transform: scaleY(0);
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.profile-wrapper:hover .profile-dropdown {
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.theme-toggle,
+.profile-trigger {
+  margin-right: 20px;
+  cursor: pointer;
+}
+.theme-toggle:hover {
+  background: #007BFF;
+  color: #fff;
+}
+
+.app-bar__middle {
+  display: flex;
+  align-items: center;
+  margin-left: auto; /* Push the middle content to the right */
+}
+body.dark {
+  background-color:rgb(40, 42, 45);
+  color: #fff;
+}
+
+.navbar.dark {
+  background-color: #d20e0e;
+}
+
+.theme-toggle {
+  order: 1;
+  background: transparent; 
+  border: 2px solid #007BFF; 
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 20px;
+  transition: background 0.3s, border-color 0.3s, color 0.3s;
+}
+
+
+.bi-person-check {
+  font-size: 24px;
+  color: #28a745; /* Green color for the checkmark */
+}
+
+.bi-person-check:hover {
+  color: #218838; /* Darker green on hover */
+}
